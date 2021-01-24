@@ -5,11 +5,18 @@ spring:
     name: test
   #    数据源配置
   datasource:
-    url: jdbc:mysql://wuliu-test-cluster.rwlb.rds.aliyuncs.com:3306/wuliu_test?characterEncoding=UTF-8
-    username: yunwei_test
-    password: Yunwei_test
+    url: jdbc:mysql://
+    username:
+    password:
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
+  test:
+    datasource:
+      url:
+      username:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      type: com.alibaba.druid.pool.DruidDataSource
+
 
 #xml方式必须配置
 mybatis-plus:

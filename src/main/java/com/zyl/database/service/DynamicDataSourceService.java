@@ -1,6 +1,7 @@
 package com.zyl.database.service;
 
 import com.sun.org.apache.bcel.internal.generic.RETURN;
+import com.zyl.database.datasourceconfig.DataSource;
 import com.zyl.database.mapper.DynamicDataSourceMapper;
 import com.zyl.database.table.WorkOrder;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,13 @@ import java.util.List;
 
 @Service
 public class DynamicDataSourceService {
+    /**
+     * 用于servie层 有效     controller加注解无效
+     */
+    @DataSource("mysql")
+    public void test() {
+
+    }
 
 
 }
